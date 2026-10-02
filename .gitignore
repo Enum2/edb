@@ -1,0 +1,18 @@
+# Build output
+build/
+# Per-run data directories and telemetry
+runs/
+data_rocks/
+data_lmdb/
+data_rocks_baseline/
+data_lmdb_only/
+data_aha_rocks/
+data_static_rocks/
+data_static_lmdb/
+# Results and logs
+results*.csv
+smoke.csv
+telemetry.csv
+*.log
+# Scratch / scratch builds
+scratch/

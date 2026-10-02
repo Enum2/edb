@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+add(){ grep -qF "#include $2" "$1" 2>/dev/null || sed -i "0,/#include/s|#include|#include $2\n#include|" "$1"; }
+add src/AHATreeEngine.h '<mutex>'
+add src/AHATreeEngine.h '<string>'
+add src/AHATreeEngine.h '<cstdint>'
+add src/AHATreeEngine.h '<chrono>'
+add src/ahse/AHSEEngine.h '<cstdint>'
+add src/ahse/AHSEEngine.h '<cstdlib>'
+add src/ahse/WorkloadMonitor.h '<cstdlib>'
+add src/ahse/WorkloadMonitor.h '<cstdint>'
+add src/ahse/WorkloadMonitor.h '<cstdio>'
+add src/StaticHybridEngine.h '<cstdint>'
+add src/LMDBEngine.h '<cstdint>'
+add src/bench/main.cpp '<cstdint>'
+add src/RocksDBEngine.h '<cstdint>'
+add src/RocksDBConfig.h '<cstdint>'
+add src/bench/Workload.h '<algorithm>'
+add src/bench/Workload.h '<numeric>'
+add src/bench/exp1_workload_a.cpp '<cstdint>'
+echo "includes patched"
