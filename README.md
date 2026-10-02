@@ -8,6 +8,10 @@ AHSE keeps **RocksDB** (LSM-tree) as the durable primary store and provisions a
 **LMDB** (memory-mapped B+-tree) secondary index on demand, governed by the
 **AdaptiveBrain** cost model (AlphaCalibrator + Q\*-Gate + PhaseLearner).
 
+# RUN CMD
+
+SIZES="2000000" HTAP_SIZES="2000000 5000000 10000000" REPS=5 bash run_all_wsl.sh
+
 ## Layout
 
 ```
